@@ -34,6 +34,7 @@ if __name__ == "__main__":
     parser.add_argument("--log_path", default='runs/triple_f1_c1_a1')
 
     parser.add_argument("--eval_only", default=False)
+    parser.add_argument("--eval_max_timesteps", default=5e4, type=int)
     parser.add_argument("--render", default=False)
     parser.add_argument("--save_video", default=False)
     parser.add_argument("--video_size", default=(600, 400))
