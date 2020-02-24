@@ -397,6 +397,7 @@ class Solver(object):
         self.steps_done = 0
         option_data = []
         self.reset()
+        self.option = np.random.randint(self.args.option_num)
     
         while self.total_timesteps < self.args.eval_max_timesteps:
             # no need to train
